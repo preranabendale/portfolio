@@ -20,7 +20,6 @@ const Skills = () => {
         <section id="skill" className="py-16">
             <div className="container mx-auto px-4">
 
-                {/* HEADING */}
                 <motion.h2
                     className="text-3xl md:text-5xl font-bold text-center mb-12"
                     initial={{ opacity: 0, y: 30 }}
@@ -33,7 +32,7 @@ const Skills = () => {
                     </span>
                 </motion.h2>
 
-                {/* GRID */}
+             
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
                     {skills.map((skill, index) => {
@@ -55,14 +54,14 @@ const Skills = () => {
                                 transition={{ delay: index * 0.1 }}
                             >
 
-                                {/* Glow Effect */}
+                               
                                 <div className="absolute inset-0 opacity-0 hover:opacity-100 transition duration-300
                                 bg-gradient-to-r from-cyan-500/10 to-blue-500/10"></div>
 
-                                {/* Content */}
+                                
                                 <div className="relative z-10">
 
-                                    {/* Icon + Name */}
+                                   
                                     <div className="flex items-center gap-3 mb-4">
                                         <div style={{ color: skill.color }}>
                                             <Icon size={30} />
@@ -72,12 +71,11 @@ const Skills = () => {
                                         </h3>
                                     </div>
 
-                                    {/* Proficiency */}
                                     <p className="text-sm text-slate-600 dark:text-slate-400 mb-2">
                                         Proficiency
                                     </p>
 
-                                    {/* Progress Bar */}
+                                
                                     <div className="w-full h-2 bg-gray-300 dark:bg-gray-700 rounded-full overflow-hidden">
                                         <motion.div
                                             className="h-2 rounded-full"
@@ -88,7 +86,6 @@ const Skills = () => {
                                         />
                                     </div>
 
-                                    {/* Percentage */}
                                     <div className="text-right text-sm text-slate-600 dark:text-slate-400 mt-1">
                                         {skill.level}%
                                     </div>
