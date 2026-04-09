@@ -47,14 +47,23 @@ Implemented features like posts, reels, stories, and file uploads.`,
       github: "https://github.com/preranabendale/daily-code-learning",
       live: "#",
       image: "/code.jpeg"
-    }
+    },
+    {
+  title: "Portfolio Website",
+  desc: "Designed and developed a responsive personal portfolio website with modern UI, smooth animations using Framer Motion, and interactive user experience to showcase projects and skills.",
+  tech: "React, JavaScript, HTML, CSS, Framer Motion",
+  github: "https://github.com/preranabendale/portfolio",
+  live: " ",
+  image: "/protfoli.png"
+}
+    
   ]
 
   return (
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-4">
 
-        {/* HEADING */}
+       
         <motion.h2
           className="text-3xl md:text-5xl font-bold text-center mb-12"
           initial={{ opacity: 0, y: 30 }}
@@ -91,23 +100,21 @@ Implemented features like posts, reels, stories, and file uploads.`,
                 hover:scale-105 transition-transform duration-300"
               />
 
-              {/* Title */}
+            
               <h3 className="text-xl font-bold mb-2 text-slate-800 dark:text-white">
                 {project.title}
               </h3>
 
-              {/* Description */}
+              
               <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
                 {project.desc}
               </p>
 
-              {/* Tech */}
               <div className="text-xs text-cyan-500 mb-4">
                 {project.tech}
               </div>
 
-              {/* Buttons */}
-              <div className="flex gap-4">
+                         <div className="flex gap-4">
 
                 <a href={project.github} target="_blank" rel="noreferrer">
                   <motion.button
